@@ -1,25 +1,25 @@
 class SkyscraperCli < Formula
-  desc "A CLI tool that deletes old posts from Bluesky, Mastodon, and Threads"
+  desc "A CLI tool that deletes old posts from Bluesky and Mastodon"
   homepage "https://github.com/ZacSweers/skyscraper"
-  version "1.0.0"
+  version "1.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.0.0/skyscraper-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "9cf7f9c94ba287b2c441879b0d1a516b49fd669e63b7ac3b76cf6b5113ec3ea4"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.1.0/skyscraper-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "ee31bfbc2a688b26afc46dcce2adc8721ad9ef46c32c4895a16a7637a1133ab6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.0.0/skyscraper-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "dc60816aa7cc3d47b7103a00e96948fde3af23e81f18228e635b09cb47338858"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.1.0/skyscraper-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "66fbeabae0b270c9c1e1930a946acb22c674e148a1c8c37c78d570c7b9416404"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.0.0/skyscraper-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3aacb141300fa27f7ce88b4c46e8b711644eed56628ac92f378e0d53528387f2"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.1.0/skyscraper-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a42eb2cc63a957c31574b3ddb68415da86e28d5a6bb13e72c5d9ba23ac3ded96"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.0.0/skyscraper-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "96a439d80013efa4e87421fef0605aa938a10153625dc1dde22db64066e42e9f"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.1.0/skyscraper-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3940c6c9096741e3da420bad019b16d502cd64472b01976e2ed00b35abf9094b"
     end
   end
   license "Apache-2.0"
