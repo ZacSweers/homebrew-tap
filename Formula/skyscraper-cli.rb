@@ -1,25 +1,25 @@
 class SkyscraperCli < Formula
   desc "A CLI tool that deletes old posts from Bluesky and Mastodon"
   homepage "https://github.com/ZacSweers/skyscraper"
-  version "1.2.1"
+  version "1.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.2.1/skyscraper-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "7c1ffebd49e199bfe62aba559c234145c68c52ce12824c3f8c191c519340e071"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.3.0/skyscraper-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "3887861f848dfff68df45a10d3d25ede3cd81629d5f2f98986b34fd77261b5df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.2.1/skyscraper-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "33920a18bf937171657eaf30c6bba55c0b32388cfb32222afd17e5cb09666f05"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.3.0/skyscraper-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "92e7f68616da97967682237f48dde49e343e020aeee0234d5d4427a147a78188"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.2.1/skyscraper-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9ca06d8b2b765002b43dbfb202bba5edf36f4c1d00c5c19d0bbc06014dd1ce38"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.3.0/skyscraper-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6fcc5a379f0a84186edef5593904f09a7dbb936cf3acefc5619e6ad6ed3e1bec"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.2.1/skyscraper-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7f5dce4498543cb9cf46bce9537338a83a7f5bacea614a3e501b3c8ca82f2f60"
+      url "https://github.com/ZacSweers/skyscraper/releases/download/v1.3.0/skyscraper-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "80abb833e899369a6e017b952e61497c882abb4562694707a2ab6b40214be2c2"
     end
   end
   license "Apache-2.0"
