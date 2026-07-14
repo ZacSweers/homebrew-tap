@@ -1,25 +1,25 @@
 class KemptFmt < Formula
   desc "A pre-commit-friendly multi-language formatter (ktfmt, google-java-format, license headers, whitespace)"
   homepage "https://github.com/ZacSweers/kempt"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.2.1/kempt-fmt-aarch64-apple-darwin.tar.xz"
-      sha256 "a06a1b010d3e990dab5ff66834f5a5d65ab24050ccfe04faa59151ffc07af2c7"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.0/kempt-fmt-aarch64-apple-darwin.tar.xz"
+      sha256 "b4f0dfe5632a1fd7dd9a8b1a958b8ffe2f09837c415fd0010d2fc92bf03cc63d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.2.1/kempt-fmt-x86_64-apple-darwin.tar.xz"
-      sha256 "44d979b50762e74795101fabff079493d598ddb9397e36c88b764d80ddcc74da"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.0/kempt-fmt-x86_64-apple-darwin.tar.xz"
+      sha256 "295113a2275e463233bbd140c7a2ae913462f26d740af670e771aa6d732c22c1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.2.1/kempt-fmt-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d3c1cc39a2f52cfc5e8b9edcdf94baaae4cabff783e7150f91aafee02d39cb4f"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.0/kempt-fmt-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "70784e15a251462204b4d59565d71a7d66b13c4c39781dfa68426d7d929ceb09"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.2.1/kempt-fmt-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9de751e48d5302e7cfdd77bb9aa02b7a2186de5fab058c2fbe5d800967923a40"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.0/kempt-fmt-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "820f3b0217530a774558110d1e7899ae72560bcaccac59951405ee7ddef07b6c"
     end
   end
   license "Apache-2.0"
