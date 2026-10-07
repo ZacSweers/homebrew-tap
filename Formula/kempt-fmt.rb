@@ -1,25 +1,25 @@
 class KemptFmt < Formula
   desc "A pre-commit-friendly multi-language formatter (ktfmt, google-java-format, license headers, whitespace)"
   homepage "https://github.com/ZacSweers/kempt"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.1/kempt-fmt-aarch64-apple-darwin.tar.xz"
-      sha256 "7225b1ee8c358f66c4992452110ea82fc4a5c73db8b74c0663d1ac1631bfc216"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.4.0/kempt-fmt-aarch64-apple-darwin.tar.xz"
+      sha256 "cfc32615e910483849a63c1304271cb8da83716604c8a94b408a20e0203e071e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.1/kempt-fmt-x86_64-apple-darwin.tar.xz"
-      sha256 "077e2b9c43bb7037aad2ce68499e020354a84516844cf4f6845c86bc336fa6ca"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.4.0/kempt-fmt-x86_64-apple-darwin.tar.xz"
+      sha256 "6c36c1b988752f09be11f67bbb6b8b7e0d356dd495c6a1b7780365ce5e8be25b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.1/kempt-fmt-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fda7fee9809fdd0bef3ff2d9fceac595ab62824b870b3431aba79d7258162932"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.4.0/kempt-fmt-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a5fa9a4229bcaf1fc8179a028aa4850679e80ee7707b2e5ccad8f9f8a19c6bbb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZacSweers/kempt/releases/download/v0.3.1/kempt-fmt-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "339c06f574c03db8c45de5c1f3e15aefbafd48c886b78803f94f9b8adb7d6a01"
+      url "https://github.com/ZacSweers/kempt/releases/download/v0.4.0/kempt-fmt-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3e19af4cb9239c781c143ff88bf8dc9941fd245e9ff8b6c5c9dd1b1dd14bd783"
     end
   end
   license "Apache-2.0"
@@ -48,10 +48,18 @@ class KemptFmt < Formula
   end
 
   def install
-    bin.install "kempt" if OS.mac? && Hardware::CPU.arm?
-    bin.install "kempt" if OS.mac? && Hardware::CPU.intel?
-    bin.install "kempt" if OS.linux? && Hardware::CPU.arm?
-    bin.install "kempt" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "kempt"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "kempt"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "kempt"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "kempt"
+    end
 
     install_binary_aliases!
 
